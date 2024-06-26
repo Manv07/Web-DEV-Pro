@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: linear-gradient(to bottom, #292828, Aquamarine);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid hsl(0, 0%, 87%);
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #292828;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #59d6a9;
+    }
+
+    .checkbox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .checkbox input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    a {
+      color: rgb(25, 150, 109);
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form>
+      <div>
+        <input type="text" placeholder="Username" required>
+        <i class="fa fa-user" aria-hidden="true"></i>
+      </div>
+      <div>
+        <input type="password" placeholder="Password" required>
+        <i class="fa fa-lock" aria-hidden="true"></i>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+        <a href="#">Forgot Password?</a>
+      </div>
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="#">Register</a></p>
+    </form>
+  </div>
+</body>
+</html>
